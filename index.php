@@ -5,7 +5,7 @@ $api_url = $is_production ? 'https://app.midtrans.com/snap/v1/transactions' : 'h
 
 if ($_SERVER['REQUEST_METHOD'] != '/charge') {
     http_response_code(404);
-    echo "Wrong Path, Make Sure It's '/charge'";
+    echo "Wrong Path, Make Sure It's `/charge`";
     exit();
 }
 
